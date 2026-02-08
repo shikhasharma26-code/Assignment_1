@@ -1,38 +1,21 @@
-# C Assignment — Functions and Header Files
+# Insurance Calculator
 
-## Contents
-This project demonstrates modular C programming using **functions** and **header files**.  
-It includes two objectives:
+A simple Java program to calculate insurance premiums based on building type, value, and claim history.
 
-### Objective 1 — Number property functions
-Files:
-- `main.c`
-- `mylib.c`
-- `mylib.h`
+## How it Works
+The program calculates costs based on these rules:
+- **Domestic:** 0.3% or 0.25% rate + $50 fee. (10% bonus for 0 claims).
+- **Commercial:** 0.5% or 0.75% rate + $80 fee. (15% bonus for 0 claims).
 
-Implements:
-- Armstrong number check  
-- Adams number check  
-- Prime Palindrome check
+## How to Run
+1. Save the code as `Main.java`.
+2. Compile: `javac Main.java`
+3. Run: `java Main`
 
-### Objective 2 — 1D Array utilities
-Files:
-- `main_array.c`
-- `arraylib.c`
-- `arraylib.h`
+## Input Example
+Domestic
+80000
+0
 
-Implements:
-- Find max/min index  
-- Find average  
-- Reverse & sort array  
-- Linear search  
-
----
-
-## ⚙️ Compilation (Windows CMD or Git Bash)
-```bash
-# Objective 1
-gcc main.c mylib.c -o prog1.exe -lm
-
-# Objective 2
-gcc main_array.c arraylib.c -o prog2.exe
+## Output Example
+261.00
